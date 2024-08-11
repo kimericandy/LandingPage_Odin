@@ -12,6 +12,12 @@
   }
 
 
+/*var*/
+:root{
+    --font-plain: Arial, Helvetica, sans-serif;
+    --font-special: Arial, Helvetica, sans-serif;
+}
+
 /*body CSS*/
 
 
@@ -33,6 +39,9 @@ body{
 
 }
 
+.hero-logo{
+    height: 0.8em;
+}
 .nav{
     display:flex;
     justify-content: space-between;
@@ -52,7 +61,7 @@ a{
     color: white;
     text-decoration: none; 
     font-family: PT Sans Caption, Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: 12px;
 }
 
 li {
@@ -68,13 +77,51 @@ ul {
 
 
 .header-main{
+    display:flex;
+    flex-direction:column;
     font-size: 72px;
     font-weight: extra-bold;
     color:white;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
     filter: drop-shadow(5px 5px 5px black);
+    align-items:center;
+    gap: 20px;
+}
 
+.header-signup{
+    width: 300px;
+}
+
+.header{
+    display:flex;
+    justify-content: center;
+    background-size: cover;
+    background-color: #1F2937;
+    background-size: cover;
+    background-image:url(./images/Everything-Gate.webp);
+    
+    background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        
+        /* bottom, image */
+        url(https://images.unsplash.com/photo-1614030424754-24d0eebd46b2);
+
+}
+
+.header-container{
+    filter: blur(2px);
+    -webkit-filter: blur(0px);
+    padding: 100px 0px 100px 0px;
+}
+
+.header-text {
+    color: white;
+    padding-bottom: 10px;
 }
 
 .project-title{
@@ -83,17 +130,15 @@ ul {
     align-items: center;
     font-size: 48px;
     font-weight: 900;
-}
-.project{
-    border: solid red 1px;
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .project-container{
     display:flex;
     flex-direction: column;
     align-items: center;
-    width: 200px;
+    width: 20%;
+    min-width: 20ch;
 }
 
 .project-body{
@@ -116,7 +161,7 @@ ul {
 
 
 .quote{
-    font-size: 48px;
+    font-size: 36px;
     font-style: italic;
     color: #1F2937;
     font-weight: light;
@@ -126,7 +171,6 @@ ul {
 
 .author{
     font-size: 24px;
-    color: red;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align:right;
@@ -140,48 +184,22 @@ button{
     font-weight: bold;
     border: none;
     display:flex;
-align-items: center;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
 }
 
 
 
 .subtext
  {
-    font-size: 24px;
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
 
-.header{
-    display:flex;
-    background-size: cover;
-    background-color: #1F2937;
-    background-size: cover;
-    background-image:url(./images/Everything-Gate.webp);
-    
-    background:
-        /* top, transparent black, faked with gradient */ 
-        linear-gradient(
-          rgba(0, 0, 0, 0.7), 
-          rgba(0, 0, 0, 0.7)
-        ),
-        
-        /* bottom, image */
-        url(https://images.unsplash.com/photo-1614030424754-24d0eebd46b2);
 
-}
-
-.header-container{
-    filter: blur(2px);
-    -webkit-filter: blur(0px);
-    padding: 200px;
-}
-
-.header-text {
-    color: white;
-    padding-bottom: 10px;
-}
 
 .icon-pack{
     border-radius: 32px;
@@ -229,4 +247,22 @@ align-items: center;
 
 .signup{
     border:white solid 2px;
+}
+
+.footer{
+    background-color: #1F2937;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    color: white;
+}
+
+.legal{
+    text-decoration: none;
+    list-style: none;
+
 }
