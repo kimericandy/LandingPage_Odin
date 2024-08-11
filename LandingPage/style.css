@@ -14,6 +14,11 @@
 
 /*body CSS*/
 
+
+.section-padding{
+    padding: 100px 0px 100px 0px;
+}
+
 body{
     margin:0;
 }
@@ -21,7 +26,6 @@ body{
 .margin{
     margin-right: 15%;
     margin-left: 15%;
-
 }
 
 .hero {
@@ -37,7 +41,7 @@ body{
 }
 
 .nav-bar{
-    font-size: 24px;
+    font-size: 36px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -48,7 +52,7 @@ a{
     color: white;
     text-decoration: none; 
     font-family: PT Sans Caption, Helvetica, sans-serif;
-
+    font-size: 24px;
 }
 
 li {
@@ -59,26 +63,30 @@ ul {
     padding:0px;
     display:flex;
     list-style: none;
-    gap: 16px;
+    gap: 24px;
 }
 
 
-
 .header-main{
-    font-size: 48px;
+    font-size: 72px;
     font-weight: extra-bold;
-    color:black;
+    color:white;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    filter: drop-shadow(5px 5px 5px black);
+
 }
 
 .project-title{
     display:flex;
     flex-direction: column;
     align-items: center;
-    font-size: 36px;
+    font-size: 48px;
+    font-weight: 900;
 }
 .project{
     border: solid red 1px;
+
 }
 
 .project-container{
@@ -92,7 +100,7 @@ ul {
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
-    padding: 100px;
+    padding-top: 100px;
     gap: 30px;
 }
 
@@ -101,12 +109,19 @@ ul {
     background-color: #E5E7EB;
 }
 
+.testimony-body{
+
+}
+
+
+
 .quote{
-    font-size: 36px;
+    font-size: 48px;
     font-style: italic;
     color: #1F2937;
     font-weight: light;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 100px 0px 100px;
 }
 
 .author{
@@ -125,13 +140,14 @@ button{
     font-weight: bold;
     border: none;
     display:flex;
+align-items: center;
 }
 
 
 
 .subtext
  {
-    font-size: 18px;
+    font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -139,17 +155,31 @@ button{
 
 .header{
     display:flex;
-    padding-top: 100px;
-    padding-bottom: 100px;
     background-size: cover;
-    background-image:url(./images/Red-Rocks-Ironwork-10-scaled.jpg);
     background-color: #1F2937;
-    filter: blur(0px);
+    background-size: cover;
+    background-image:url(./images/Everything-Gate.webp);
+    
+    background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        
+        /* bottom, image */
+        url(https://images.unsplash.com/photo-1614030424754-24d0eebd46b2);
+
+}
+
+.header-container{
+    filter: blur(2px);
     -webkit-filter: blur(0px);
+    padding: 200px;
 }
 
 .header-text {
-    color: yellow;
+    color: white;
     padding-bottom: 10px;
 }
 
@@ -168,13 +198,35 @@ button{
 }
 
 .c2a{
-    background-color: #3882F6;
 }
 
 .c2a-title{
-    font-size: 24px;
+    font-size: 32px;
     color: #F9FAF8;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
+.c2a-main{
+    background-color: #3882F6;
+    border-radius: 10px;
+    padding: 50px 150px 50px 150px;
+    display:flex;
+    justify-content:space-between;
+    font-weight: 100;
 
+}
+
+.c2a-body{
+}
+
+.c2a-section{
+    font-size: 24px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.signup{
+    border:white solid 2px;
+}
